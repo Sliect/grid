@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test</title>
+  <link rel="stylesheet" href="./grid.css">
+  <style>
+    .container {
+      width: 1200px;
+      margin: 50px auto;
+    }
+    .grid-content {
+      padding-left: 15px;
+      padding-right: 15px;
+      min-height: 36px;
+      line-height: 36px;
+      border-radius: 4px;
+    }
+    .bg-purple {
+      background-color: #d3dce6;
+    }
+    .bg-purple-lighter {
+      background: #e5e9f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-6"><div class="grid-content bg-purple">.col-6</div></div>
+      <div class="col-6"><div class="grid-content bg-purple-lighter">.col-6</div></div>
+      <div class="col-6"><div class="grid-content bg-purple">.col-6</div></div>
+      <div class="col-6"><div class="grid-content bg-purple-lighter">.col-6</div></div>
+    </div>
+    <div class="row">
+      <div class="col-6 col-offset-6"><div class="grid-content bg-purple">.col-6.col-offset-6</div></div>
+      <div class="col-6 col-offset-6"><div class="grid-content bg-purple">.col-6.col-offset-6</div></div>
+    </div>
+    <div class="row">
+      <div class="col-18 col-push-6"><div class="grid-content bg-purple-lighter">.col-18.col-push-6</div></div>
+      <div class="col-6 col-pull-18"><div class="grid-content bg-purple">.col-6.col-pull-18</div></div>
+    </div>
+  </div>
+</body>
+</html>
